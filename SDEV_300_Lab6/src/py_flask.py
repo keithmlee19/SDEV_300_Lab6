@@ -1,6 +1,6 @@
 '''Program that creates a simple website using Python Flask'''
-from flask import Flask, render_template
 from datetime import datetime
+from flask import Flask, render_template
 
 app = Flask(__name__)
 now = datetime.now() # current date/time
@@ -21,5 +21,5 @@ def tater():
     '''Render Tater page'''
     return render_template("tater.html", dt_now = dt_now)
 
-if __name__ == "__main__":  
+if __name__ == "__main__":
     app.run(debug=True) # launch and run with debugging
