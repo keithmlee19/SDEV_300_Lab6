@@ -1,0 +1,17 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+}
+
+footer { /* Sets footer to 5% from the bottom and makes font size smaller */
+    bottom: 5%;
+    position: fixed;
+    font-size: 12px;
+}

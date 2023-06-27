@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/css/my_style.css" />
+    <title>Welcome to Keith's Cats Page</title>
+  </head>
+  <body>
+    <h1>Welcome to Keith's Cats Page</h1>
+    <div>Navigation: <a href="/">Index</a> <a href="/zebra">Zebra</a> <a href="/tater">Tater</a></div>
+    <div id="content">{% block content %}{% endblock %}</div>
+      <footer id="footer">
+          {% block footer %}
+          &copy; Copyright 2023 by Keith Lee
+          <p>The current date and time is: {{ dt_now }}</p>
+          {% endblock %}
+      </footer>
+  </body>
+</html>
